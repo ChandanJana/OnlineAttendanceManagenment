@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.example.chandan.theprofessional.Login">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:id="@+id/e1"
+                android:layout_below="@+id/textView" >
+
+                <EditText
+                    android:id="@+id/UserID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User ID"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:layout_below="@+id/e1"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget password?"
+                android:textColor="#df0000"
+                android:textSize="15sp"
+                android:gravity="right"
+                android:layout_margin="10dp"
+                android:id="@+id/ForPass"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:id="@+id/LogIn"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#818a85ac"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:layout_gravity="center"
+                android:layout_marginTop="1sp"
+                android:layout_marginBottom="1sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an Account"
+                android:gravity="center"
+                android:textColor="#0c0ce1"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:id="@+id/NewAcc"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

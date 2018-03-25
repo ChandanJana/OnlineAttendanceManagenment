@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/attendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/nav_BackUp"
+            android:icon="@drawable/backup"
+            android:title="Backup" />
+        <item
+            android:id="@+id/nav_RestrData"
+            android:icon="@drawable/restore"
+            android:title="Restore data" />
+        <item
+            android:id="@+id/nav_DropData"
+            android:icon="@drawable/drop_data"
+            android:title="Reset Student details" />
+        <item
+            android:id="@+id/AboutApp"
+            android:icon="@drawable/ic_info"
+            android:title="About App" />
+        </group>
+        <item android:title="Communicate">
+        <menu>
+        <item
+            android:id="@+id/ContactUs"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact Us" />
+        </menu>
+    </item>
+</menu>

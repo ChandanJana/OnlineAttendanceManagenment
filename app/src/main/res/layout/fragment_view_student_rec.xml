@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chandan.theprofessional.ForgetPass">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="10dp"
+        android:text="View Student Details"
+        android:textColor="#011a58"
+        android:textSize="19sp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView"
+        android:id="@+id/linear_layout"
+        android:layout_marginBottom="10dp">
+
+        <Spinner
+            android:id="@+id/ClassSpinner"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="50dp"
+            android:inputType="number"
+            android:spinnerMode="dialog"
+            android:prompt="@string/classes"
+            />
+
+        <Spinner
+            android:id="@+id/BatchSpinner"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="25dp"
+            android:inputType="number"
+            android:spinnerMode="dialog"
+            android:prompt="@string/batches"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListViewStd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_layout"
+        android:layout_alignParentStart="true"
+        android:dividerHeight="5dp"
+        />
+
+</RelativeLayout>

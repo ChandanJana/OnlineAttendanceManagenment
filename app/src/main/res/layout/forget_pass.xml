@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50sp"
+        android:textColor="#011a58"
+        android:layout_marginTop="15sp"
+        />
+    <EditText
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Uid"
+        android:hint="Enter your E-mail ID"
+        android:layout_marginBottom="10sp"
+        android:textColorHint="#d7d7d7"
+        android:layout_gravity="center"
+        android:inputType="text"
+        />
+    <EditText
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/AltEmail"
+        android:hint="Enter your Alternate E-mail ID"
+        android:layout_marginBottom="20sp"
+        android:textColorHint="#d7d7d7"
+        android:layout_gravity="center"
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Get password"
+        android:layout_gravity="center"
+        android:id="@+id/GetPass"
+        android:background="#ececec"
+        android:textSize="17sp"
+        />
+</LinearLayout>

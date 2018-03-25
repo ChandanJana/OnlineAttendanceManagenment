@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.chandan.theprofessional.SplashActivity">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/home"
+        android:id="@+id/HomeImage"
+        android:layout_marginTop="33dp"
+        android:layout_gravity="center"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProgressBar"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Professional App"
+        android:textSize="20dp"
+        android:textColor="#930202"
+        android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        />
+
+
+
+
+
+
+
+
+
+</LinearLayout>
